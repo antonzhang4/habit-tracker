@@ -14,6 +14,7 @@ function initializeTime() {
 initializeTime()
 
 function startTimer() {
+    clearInterval(timerId)
     timerId = setInterval(() => {
         initializeTime()   
         if(--timer < 0) 
@@ -25,12 +26,13 @@ function startTimer() {
     let thirtyMin = 60 * 30
 }*/
 
-document.getElementById("start").addEventListener('click', startTimer)
+document.getElementById("start").addEventListener('click', startTimer) // click the button multiple times cause the timer is act strange
 document.getElementById('stop').addEventListener('click', function() {
     clearInterval(timerId)
 })
 document.getElementById('reset').addEventListener('click', function() {
     duration = 60*30
     timer = duration, minutes, seconds
-    //Can't reset when the timer is paused
+    initializeTime()
+    clearInterval(timerId)
 })
