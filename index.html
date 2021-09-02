@@ -12,23 +12,26 @@
         <h1>HabitTracker</h1>
         <!--Setting on the right-->
         <div class = "timer-container">
-            <div class = "pomodoro">
-                <p class = "pomodoro-btn">Pomodoro</p>
-                <p class = "short-break-btn">Short Break</p>
-                <p class = "long-break-btn">Long Break</p>
+            <div id = "pomodoro">
+                <p id = "pomodoro-btn" class = "pomodoro-type pomodoro-active">Pomodoro</p>
+                <p id = "short-break-btn" class = "pomodoro-type">Short Break</p>
+                <p id = "long-break-btn" class = "pomodoro-type">Long Break</p>
             </div>
             <div id = "timer">
                 <h1 id = 'time'></h1>
             </div>
             <div class = "buttons">
-                <button id = "start">START</button>
+                <button id = "start" class = "button-active">START</button>
                 <button id = "stop">STOP</button>
                 <button id = "reset">RESET</button>
             </div>
         </div>
         <h3>Task</h3>
-        <h3 id = "task"></h2>
+        <h3 id = "task"></h3>
+        <!--Build a modal which pops up for a settings and task section. Have it connect to a scrollable navigation menu on the right side-->
+        
     </div>
-    <script src = index.js></script>
+    <script src = timer.js></script>
+    <script src = active.js></script>
 </body>
 </html>

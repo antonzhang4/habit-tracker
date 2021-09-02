@@ -23,7 +23,7 @@ body {
     padding-bottom: 1em;
 }
 
-.pomodoro {
+#pomodoro {
     width: 400px;
     margin: 0 auto;
     display: flex;
@@ -31,13 +31,19 @@ body {
     
 }
 
-.pomodoro > p {
+#pomodoro > p {
     padding: 0.25em 0.5em;
     margin-bottom: 0;
 }
 
-.pomodoro-btn {
+#pomodoro > p:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.pomodoro-active {
     background: #302b63;
+    font-weight: bold;
 }
 
 #timer > h1 {
