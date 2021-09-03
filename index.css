@@ -81,3 +81,29 @@ button {
     background: #000099;
     margin-right: 4px;
 }
+
+/* Task List */
+.add-task,
+.remove-task {
+    background: #4c477f;
+    border-radius: 30px;
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    /*remove margins*/
+}
+
+.task-buttons {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task-icon {
+    border: 2px solid #b4c2e0;
+    border-radius: 200px;
+    padding: 0.5em;
+    width: 16px;
+    text-align: center;
+    margin-right: 15px;
+}
